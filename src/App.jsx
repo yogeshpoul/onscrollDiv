@@ -1,4 +1,5 @@
 import React from 'react';
+import { Complaints } from './Complaint';
 
 function App() {
   const scrollToSection = (id) => {
@@ -27,16 +28,18 @@ function App() {
         </ul>
       </nav>
       <div id="home" className='bg-red-500 h-screen'>
-      <div className='text-center'>Home</div>
+        <div className='text-center'>Home</div>
       </div>
       <div id="achievements" className='bg-green-500 h-screen text-center'>
-      Achievements
+        Achievements
       </div>
       <div id="complaints" className='bg-blue-500 h-screen text-center'>
-      Complaints
+        Complaints
+        <Complaints/>
       </div>
       <div id="about-us" className='bg-gray-500 h-screen text-center'>
-      About Us
+        About Us
+        
       </div>
     </div>
   );
